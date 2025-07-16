@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boilerplate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    /* Main content container width = viewport width minus sidebar width (256px) on md and up */
+    @media (min-width: 768px) {
+      .main-content-container {
+        width: calc(100vw - 16rem); /* 16rem = 256px sidebar width */
+        padding-left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+<div class="flex h-screen overflow-hidden">
+
+  <!-- Sidebar -->
+  <aside
+    id="sidebar"
+    class="fixed inset-y-0 left-0 z-30 w-64 bg-gray-100 border-r border-gray-300 transform -translate-x-full transition-transform duration-300 ease-in-out
+          md:relative md:translate-x-0"
+  >
+    <div class="h-full flex flex-col p-6">
+      <h2 class="text-xl font-semibold mb-6">Worship Folders</h2>
+
+      <!-- Static Navigation -->
+      <div class="mb-4">
+        <a href="./home.html" class="block px-4 py-2 rounded-lg font-medium text-gray-800 hover:bg-gray-200 transition">
+          Home
+        </a>
+      </div>
+
+      <hr class="border-t border-gray-300 mb-4">
+
+      <!-- Dynamic Navigation -->
+      <nav id="dynamic-links" class="flex flex-col space-y-3">
+        <!-- Links added here by JS -->
+      </nav>
+
+      <footer id="credit" title="Made with ☕ by Jarrett Mielke" class="mt-auto opacity-40 text-sm">&copy; 2025</footer>
+    </div>
+  </aside>
+
+  <!-- Overlay for mobile -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black bg-opacity-25 hidden z-20 md:hidden"
+  ></div>
+
+  <!-- Main content -->
+  <div class="flex-1 flex flex-col overflow-auto main-content-container scroll-smooth">
+
+    <!-- Mobile header with menu button -->
+    <header class="md:hidden sticky top-0 flex items-center bg-gray-100 border-b border-gray-300 p-4">
+      <button
+        id="menu-btn"
+        class="text-blue-gray-600 focus:outline-none focus:ring focus:ring-blue-gray-300 rounded-full p-2 hover:bg-gray-200 transition"
+      >
+        <!-- Hamburger icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <h1 class="ml-4 text-lg font-semibold text-blue-gray-700">Page Title</h1>
+    </header>
+
+    <main class="max-w-3xl mx-auto w-full p-8">
+      <h1 class="text-3xl font-bold text-emerald-700 mb-6">Page Title</h1>
+      <p class="text-gray-700 leading-relaxed mb-4">This is the main content area. Start inserting elements here.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at porttitor justo, quis consequat metus. Praesent commodo nisl ac libero fringilla sagittis. Cras sed nibh semper, feugiat dolor eget, eleifend diam. Proin orci sem, euismod quis purus interdum, accumsan ullamcorper augue. Aliquam ut tellus justo. Donec non accumsan ante. Maecenas laoreet quam ut massa mattis, id mattis dui consectetur. Mauris consectetur sit amet dui vitae lacinia. Pellentesque erat felis, aliquet at ligula tempus, pharetra ullamcorper velit. Nam a libero ante. Maecenas at malesuada sapien. Morbi imperdiet blandit est ut venenatis. Donec id condimentum metus.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Praesent tincidunt, velit a condimentum elementum, ligula ipsum placerat leo, eu rutrum nulla neque id nisl. Suspendisse id ipsum sapien. Suspendisse sit amet erat orci. In quis lobortis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean aliquam sapien eu urna rhoncus, ac sagittis neque hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt quam vel mi mollis egestas. Phasellus quis nisi ut leo bibendum suscipit vel quis augue.</p>
+      <p class="text-gray-700 leading-relaxed mb-4">Mauris id interdum tellus, sit amet interdum tortor. Phasellus nec turpis ex. Sed sed dolor vitae ante ultrices auctor. Praesent vulputate dapibus molestie. Suspendisse rhoncus bibendum enim a tincidunt. Maecenas tincidunt ligula et lorem porta imperdiet. Integer accumsan, nisl eget ultricies interdum, nulla purus maximus elit, nec consectetur felis ipsum sed nisl. Nam scelerisque in nibh eu eleifend. Nam facilisis feugiat quam, egestas sollicitudin sapien bibendum vel. Morbi iaculis sapien quis est euismod luctus. Donec nisl massa, sagittis vel sem a, gravida rhoncus orci. Nam ut vulputate magna, ut malesuada justo. Maecenas non blandit odio.</p>
+    </main>
+  </div>
+
+</div>
+
+<script>
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const menuBtn = document.getElementById('menu-btn');
+
+function openSidebar() {
+  sidebar.classList.remove('-translate-x-full');
+  overlay.classList.remove('hidden');
+  document.body.style.overflow = 'hidden'; // prevent body scroll
+}
+
+function closeSidebar() {
+  sidebar.classList.add('-translate-x-full');
+  overlay.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function generateSidebarLinks() {
+  const sidebarNav = document.querySelector('#dynamic-links');
+  const headings = document.querySelectorAll('main h2');
+
+  headings.forEach((heading, index) => {
+    // Ensure the heading has a unique ID
+    if (!heading.id) {
+      heading.id = heading.textContent
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')         // spaces to dashes
+        .replace(/[^\w\-]+/g, '')     // remove non-word chars
+        .replace(/\-+/g, '-');        // collapse multiple dashes
+
+      // Ensure uniqueness by appending an index if necessary
+      if (document.getElementById(heading.id)) {
+        heading.id += '-' + index;
+      }
+    }
+
+    // Create the link
+    const link = document.createElement('a');
+    link.href = `#${heading.id}`;
+    link.textContent = heading.textContent;
+    link.className = 'px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-200 transition block';
+
+    // Append to nav
+    sidebarNav.appendChild(link);
+  });
+}
+
+menuBtn.addEventListener('click', () => {
+  if (sidebar.classList.contains('-translate-x-full')) {
+    openSidebar();
+  } else {
+    closeSidebar();
+  }
+});
+
+sidebar.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
+  if (link) {
+    closeSidebar();
+  }
+});
+
+overlay.addEventListener('click', closeSidebar);
+</script>
+
+</body>
+</html>
