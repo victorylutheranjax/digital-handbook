@@ -28,13 +28,13 @@
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 min-h-screen p-6">
-  <div class="max-w-3xl mx-auto space-y-12">
-    <h1 class="text-3xl font-bold text-emerald-700 mb-8">Element Generator</h1>
+  <div class="max-w-3xl mx-auto space-y-10">
+    <h1 class="text-4xl font-extrabold text-emerald-700 text-center">Element Generator</h1>
 
     <!-- Color selector -->
     <section>
-      <label for="colorSelect" class="block mb-2 font-semibold text-lg">Select Base Color</label>
-      <select id="colorSelect" class="p-2 rounded border border-gray-300 w-48">
+      <label for="colorSelect" class="block mb-2 font-medium text-lg">Select Base Color</label>
+      <select id="colorSelect" class="p-2.5 rounded-md border border-gray-300 shadow-sm w-full max-w-xs focus:ring-emerald-500 focus:border-emerald-500">
         <option value="red" class="text-red-800 bg-red-200">Red</option>
         <option value="orange" class="text-orange-800 bg-orange-200">Orange</option>
         <option value="amber" class="text-amber-800 bg-amber-200">Amber</option>
@@ -60,126 +60,114 @@
       </select>
     </section>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Title 1</h2>
-      <textarea id="title1Input" placeholder="Enter title 1..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="title1Preview" class="space-y-3">Title 1</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="title1Code"></code></pre>
-        <button class="copy-btn" data-target="title1Code">Copy</button>
+    <!-- Utility section block -->
+    <!-- Repeat this block for each type -->
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Title 1</h2>
+      <textarea id="title1Input" placeholder="Enter title 1..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
+      <div id="title1Preview" class="text-gray-600 text-sm space-y-2">Title 1</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title1Code"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title1Code">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Title 2</h2>
-      <textarea id="title2Input" placeholder="Enter title 2..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="title2Preview" class="space-y-3">Title 2</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="title2Code"></code></pre>
-        <button class="copy-btn" data-target="title2Code">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Title 2</h2>
+      <textarea id="title2Input" placeholder="Enter title 2..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
+      <div id="title2Preview" class="text-gray-600 text-sm space-y-2">Title 2</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title2Code"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title2Code">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Title 3</h2>
-      <textarea id="title3Input" placeholder="Enter title 3..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="title3Preview" class="space-y-3">Title 3</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="title3Code"></code></pre>
-        <button class="copy-btn" data-target="title3Code">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Title 3</h2>
+      <textarea id="title3Input" placeholder="Enter title 3..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
+      <div id="title3Preview" class="text-gray-600 text-sm space-y-2">Title 3</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title3Code"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title3Code">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Paragraph</h2>
-      <textarea id="paragraphInput" placeholder="Enter paragraph..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="paragraphPreview" class="space-y-3">Paragraph</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="paragraphCode"></code></pre>
-        <button class="copy-btn" data-target="paragraphCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Paragraph</h2>
+      <textarea id="paragraphInput" placeholder="Enter paragraph..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="paragraphPreview" class="text-gray-600 text-sm space-y-2">Paragraph</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="paragraphCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="paragraphCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Step</h2>
-      <textarea id="stepInput" placeholder="Enter step..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      <label class="block mb-2 text-sm"><input type="checkbox" id="wrapStep" class="mr-1" checked /> Wrap in <code>&lt;ol&gt;</code></label>
-      <div id="stepPreview" class="space-y-3">Step</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="stepCode"></code></pre>
-        <button class="copy-btn" data-target="stepCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Step</h2>
+      <textarea id="stepInput" placeholder="Enter step..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <label class="inline-flex items-center text-sm text-gray-600">
+        <input type="checkbox" id="wrapStep" class="mr-2 rounded border-gray-300 focus:ring-emerald-500" checked>
+        Wrap in <code>&lt;ol&gt;</code>
+      </label>
+      <div id="stepPreview" class="text-gray-600 text-sm space-y-2">Step</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="stepCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="stepCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Tip</h2>
-      <textarea id="tipInput" placeholder="Enter tip..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="tipPreview" class="space-y-3">Tip</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="tipCode"></code></pre>
-        <button class="copy-btn" data-target="tipCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Tip</h2>
+      <textarea id="tipInput" placeholder="Enter tip..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="tipPreview" class="text-gray-600 text-sm space-y-2">Tip</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="tipCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="tipCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Warning</h2>
-      <textarea id="warningInput" placeholder="Enter warning..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="warningPreview" class="space-y-3">Warning</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="warningCode"></code></pre>
-        <button class="copy-btn" data-target="warningCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Warning</h2>
+      <textarea id="warningInput" placeholder="Enter warning..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="warningPreview" class="text-gray-600 text-sm space-y-2">Warning</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="warningCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="warningCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Note</h2>
-      <textarea id="noteInput" placeholder="Enter note..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="notePreview" class="space-y-3">Note</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="noteCode"></code></pre>
-        <button class="copy-btn" data-target="noteCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Note</h2>
+      <textarea id="noteInput" placeholder="Enter note..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="notePreview" class="text-gray-600 text-sm space-y-2">Note</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="noteCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="noteCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Code</h2>
-      <textarea id="codeInput" placeholder="Enter code..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="codePreview" class="space-y-3">Code</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="codeCode"></code></pre>
-        <button class="copy-btn" data-target="codeCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Code</h2>
+      <textarea id="codeInput" placeholder="Enter code..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="codePreview" class="text-gray-600 text-sm space-y-2">Code</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="codeCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="codeCode">Copy</button>
       </div>
     </section>
-    
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Link</h2>
-      <textarea id="linkInput" placeholder="Enter link..." class="w-full p-2 rounded border border-gray-300 mb-2" rows="3"></textarea>
-      
-      <div id="linkPreview" class="space-y-3">Link</div>
-      <div class="relative">
-        <pre class="bg-gray-100 p-3 rounded text-sm overflow-x-auto"><code id="linkCode"></code></pre>
-        <button class="copy-btn" data-target="linkCode">Copy</button>
+    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold text-gray-700">Link</h2>
+      <textarea id="linkInput" placeholder="Enter link..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
+      <div id="linkPreview" class="text-gray-600 text-sm space-y-2">Link</div>
+      <div class="group relative">
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="linkCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="linkCode">Copy</button>
       </div>
     </section>
-    
   </div>
+</body>
+
 
   <script>
     function escapeHtml(text) {
