@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,150 +30,66 @@
   <div class="max-w-3xl mx-auto space-y-10">
     <h1 class="text-4xl font-extrabold text-emerald-700 text-center">Element Generator</h1>
 
-    <!-- Color selector -->
-    <section>
-      <label for="colorSelect" class="block mb-2 font-medium text-lg">Select Base Color</label>
-      <select id="colorSelect" class="p-2.5 rounded-md border border-gray-300 shadow-sm w-full max-w-xs focus:ring-emerald-500 focus:border-emerald-500">
-        <option value="red" class="text-red-800 bg-red-200">Red</option>
-        <option value="orange" class="text-orange-800 bg-orange-200">Orange</option>
-        <option value="amber" class="text-amber-800 bg-amber-200">Amber</option>
-        <option value="yellow" class="text-yellow-800 bg-yellow-200">Yellow</option>
-        <option value="lime" class="text-lime-800 bg-lime-200">Lime</option>
-        <option value="green" class="text-green-800 bg-green-200">Green</option>
-        <option value="emerald" selected class="text-emerald-800 bg-emerald-200">Emerald</option>
-        <option value="teal" class="text-teal-800 bg-teal-200">Teal</option>
-        <option value="cyan" class="text-cyan-800 bg-cyan-200">Cyan</option>
-        <option value="sky" class="text-sky-800 bg-sky-200">Sky</option>
-        <option value="blue" class="text-blue-800 bg-blue-200">Blue</option>
-        <option value="indigo" class="text-indigo-800 bg-indigo-200">Indigo</option>
-        <option value="violet" class="text-violet-800 bg-violet-200">Violet</option>
-        <option value="purple" class="text-purple-800 bg-purple-200">Purple</option>
-        <option value="fuchsia" class="text-fuchsia-800 bg-fuchsia-200">Fuchsia</option>
-        <option value="pink" class="text-pink-800 bg-pink-200">Pink</option>
-        <option value="rose" class="text-rose-800 bg-rose-200">Rose</option>
-        <option value="slate" class="text-slate-800 bg-slate-200">Slate</option>
-        <option value="gray" class="text-gray-800 bg-gray-200">Gray</option>
-        <option value="zinc" class="text-zinc-800 bg-zinc-200">Zinc</option>
-        <option value="neutral" class="text-neutral-800 bg-neutral-200">Neutral</option>
-        <option value="stone" class="text-stone-800 bg-stone-200">Stone</option>
-      </select>
-    </section>
-
-    <!-- Utility section block -->
-    <!-- Repeat this block for each type -->
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Title 1</h2>
-      <textarea id="title1Input" placeholder="Enter title 1..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
-      <div id="title1Preview" class="text-gray-600 text-sm space-y-2">Title 1</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title1Code"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title1Code">Copy</button>
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="w-full md:w-1/2">
+        <label for="colorSelect" class="block mb-2 font-medium text-lg">Select Base Color</label>
+        <select id="colorSelect" class="p-2.5 rounded-md border border-gray-300 shadow-sm w-full focus:ring-emerald-500 focus:border-emerald-500">
+          <option value="red" class="text-red-800 bg-red-200">Red</option>
+          <option value="orange" class="text-orange-800 bg-orange-200">Orange</option>
+          <option value="amber" class="text-amber-800 bg-amber-200">Amber</option>
+          <option value="yellow" class="text-yellow-800 bg-yellow-200">Yellow</option>
+          <option value="lime" class="text-lime-800 bg-lime-200">Lime</option>
+          <option value="green" class="text-green-800 bg-green-200">Green</option>
+          <option value="emerald" selected class="text-emerald-800 bg-emerald-200">Emerald</option>
+          <option value="teal" class="text-teal-800 bg-teal-200">Teal</option>
+          <option value="cyan" class="text-cyan-800 bg-cyan-200">Cyan</option>
+          <option value="sky" class="text-sky-800 bg-sky-200">Sky</option>
+          <option value="blue" class="text-blue-800 bg-blue-200">Blue</option>
+          <option value="indigo" class="text-indigo-800 bg-indigo-200">Indigo</option>
+          <option value="violet" class="text-violet-800 bg-violet-200">Violet</option>
+          <option value="purple" class="text-purple-800 bg-purple-200">Purple</option>
+          <option value="fuchsia" class="text-fuchsia-800 bg-fuchsia-200">Fuchsia</option>
+          <option value="pink" class="text-pink-800 bg-pink-200">Pink</option>
+          <option value="rose" class="text-rose-800 bg-rose-200">Rose</option>
+          <option value="slate" class="text-slate-800 bg-slate-200">Slate</option>
+          <option value="gray" class="text-gray-800 bg-gray-200">Gray</option>
+          <option value="zinc" class="text-zinc-800 bg-zinc-200">Zinc</option>
+          <option value="neutral" class="text-neutral-800 bg-neutral-200">Neutral</option>
+          <option value="stone" class="text-stone-800 bg-stone-200">Stone</option>
+        </select>
       </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Title 2</h2>
-      <textarea id="title2Input" placeholder="Enter title 2..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
-      <div id="title2Preview" class="text-gray-600 text-sm space-y-2">Title 2</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title2Code"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title2Code">Copy</button>
+      <div class="w-full md:w-1/2">
+        <label for="elementSelect" class="block mb-2 font-medium text-lg">Select Element</label>
+        <select id="elementSelect" class="p-2.5 rounded-md border border-gray-300 shadow-sm w-full focus:ring-emerald-500 focus:border-emerald-500">
+          <option value="title1" selected>Title 1</option>
+          <option value="title2">Title 2</option>
+          <option value="title3">Title 3</option>
+          <option value="paragraph">Paragraph</option>
+          <option value="step">Step</option>
+          <option value="tip">Tip</option>
+          <option value="warning">Warning</option>
+          <option value="note">Note</option>
+          <option value="code">Code</option>
+          <option value="link">Link</option>
+        </select>
       </div>
-    </section>
+    </div>
 
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Title 3</h2>
-      <textarea id="title3Input" placeholder="Enter title 3..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
-      <div id="title3Preview" class="text-gray-600 text-sm space-y-2">Title 3</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="title3Code"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="title3Code">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Paragraph</h2>
-      <textarea id="paragraphInput" placeholder="Enter paragraph..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="paragraphPreview" class="text-gray-600 text-sm space-y-2">Paragraph</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="paragraphCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="paragraphCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Step</h2>
-      <textarea id="stepInput" placeholder="Enter step..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <label class="inline-flex items-center text-sm text-gray-600">
+    <section id="dynamicCard" class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
+      <h2 id="cardTitle" class="text-xl font-semibold text-gray-700">Title1</h2>
+      <textarea id="cardInput" class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="1"></textarea>
+      <label id="stepToggle" class="inline-flex items-center text-sm text-gray-600 hidden">
         <input type="checkbox" id="wrapStep" class="mr-2 rounded border-gray-300 focus:ring-emerald-500" checked>
         Wrap in <code>&lt;ol&gt;</code>
       </label>
-      <div id="stepPreview" class="text-gray-600 text-sm space-y-2">Step</div>
+      <div id="cardPreview" class="text-gray-600 text-sm space-y-2"></div>
       <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="stepCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="stepCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Tip</h2>
-      <textarea id="tipInput" placeholder="Enter tip..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="tipPreview" class="text-gray-600 text-sm space-y-2">Tip</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="tipCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="tipCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Warning</h2>
-      <textarea id="warningInput" placeholder="Enter warning..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="warningPreview" class="text-gray-600 text-sm space-y-2">Warning</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="warningCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="warningCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Note</h2>
-      <textarea id="noteInput" placeholder="Enter note..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="notePreview" class="text-gray-600 text-sm space-y-2">Note</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="noteCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="noteCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Code</h2>
-      <textarea id="codeInput" placeholder="Enter code..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="codePreview" class="text-gray-600 text-sm space-y-2">Code</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="codeCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="codeCode">Copy</button>
-      </div>
-    </section>
-
-    <section class="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm space-y-4">
-      <h2 class="text-xl font-semibold text-gray-700">Link</h2>
-      <textarea id="linkInput" placeholder="Enter link..." class="w-full p-3 rounded-md border border-gray-300 focus:ring-emerald-500 focus:border-emerald-500" rows="3"></textarea>
-      <div id="linkPreview" class="text-gray-600 text-sm space-y-2">Link</div>
-      <div class="group relative">
-        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="linkCode"></code></pre>
-        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" data-target="linkCode">Copy</button>
+        <pre class="bg-gray-100 p-3 rounded-md text-sm overflow-x-auto border border-gray-200"><code id="cardCode"></code></pre>
+        <button class="invisible absolute top-2 right-2 text-xs bg-emerald-600 text-white px-3 py-1 rounded group-hover:visible hover:bg-emerald-700 transition shadow-sm copy-btn" id="copyButton">Copy</button>
       </div>
     </section>
   </div>
-</body>
-
-
   <script>
-    function escapeHtml(text) {
-      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-    }
-
-    const types = ["title1", "title2", "title3", "paragraph", "step", "tip", "warning", "note", "code", "link"];
     const fallbacks = {
       title1: "Title 1",
       title2: "Title 2",
@@ -187,9 +102,6 @@
       code: "code-snippet",
       link: "Link text"
     };
-
-    // Base shades you want to keep for each type
-    // (these numbers never change)
     const shades = {
       title1: {text: "700", mb: "6"},
       title2: {text: "800", mt: "10", mb: "2"},
@@ -200,92 +112,67 @@
       link: {bg: "200", text: "700", hoverBg: "300"},
       code: {bg: "100", text: "800"},
     };
+    const buildClass = (base, color, shade) => `${base}-${color}-${shade}`;
+    const escapeHtml = text => text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-    // Function to build class names with dynamic color
-    function buildClass(base, color, shade) {
-      return `${base}-${color}-${shade}`;
-    }
+    const colorSelect = document.getElementById("colorSelect");
+    const elementSelect = document.getElementById("elementSelect");
+    const cardTitle = document.getElementById("cardTitle");
+    const cardInput = document.getElementById("cardInput");
+    const cardPreview = document.getElementById("cardPreview");
+    const cardCode = document.getElementById("cardCode");
+    const stepToggle = document.getElementById("stepToggle");
 
-    // Get current selected color from dropdown
-    function getSelectedColor() {
-      const select = document.getElementById("colorSelect");
-      return select ? select.value : "emerald";
-    }
-
-    function updateElement(type) {
-      const input = document.getElementById(type + "Input").value.trim();
-      const content = input || fallbacks[type];
-      const color = getSelectedColor();
+    function renderCard(type) {
+      const content = cardInput.value.trim() || fallbacks[type];
+      const color = colorSelect.value;
       let html = "";
 
       switch (type) {
-        case "title1":
-          html = `<h1 class="text-3xl font-bold ${buildClass("text", color, shades.title1.text)} mb-${shades.title1.mb}">${escapeHtml(content)}</h1>`;
-          break;
-        case "title2":
-          html = `<h2 class="text-2xl font-semibold mt-${shades.title2.mt} mb-${shades.title2.mb} ${buildClass("text", color, shades.title2.text)} scroll-mt-20 md:scroll-mt-0">${escapeHtml(content)}</h2>`;
-          break;
-        case "title3":
-          html = `<h3 class="text-xl font-medium mt-${shades.title3.mt} mb-${shades.title3.mb} ${buildClass("text", color, shades.title3.text)} scroll-mt-20 md:scroll-mt-0">${escapeHtml(content)}</h3>`;
-          break;
-        case "paragraph":
-          html = `<p class="text-gray-700 leading-relaxed mb-4">${escapeHtml(content)}</p>`;
-          break;
+        case "title1": html = `<h1 class="text-3xl font-bold ${buildClass("text", color, shades.title1.text)} mb-${shades.title1.mb}">${escapeHtml(content)}</h1>`; break;
+        case "title2": html = `<h2 class="text-2xl font-semibold mt-${shades.title2.mt} mb-${shades.title2.mb} ${buildClass("text", color, shades.title2.text)} scroll-mt-20 md:scroll-mt-0">${escapeHtml(content)}</h2>`; break;
+        case "title3": html = `<h3 class="text-xl font-medium mt-${shades.title3.mt} mb-${shades.title3.mb} ${buildClass("text", color, shades.title3.text)} scroll-mt-20 md:scroll-mt-0">${escapeHtml(content)}</h3>`; break;
+        case "paragraph": html = `<p class="text-gray-700 leading-relaxed mb-4">${escapeHtml(content)}</p>`; break;
         case "step":
           const wrap = document.getElementById("wrapStep").checked;
-          html = wrap
-            ? `<ol class="space-y-3 list-decimal list-inside"><li class="pl-4 -indent-4 text-gray-800">${escapeHtml(content)}</li></ol>`
-            : `<li class="pl-4 -indent-4 text-gray-800">${escapeHtml(content)}</li>`;
+          html = wrap ? `<ol class="space-y-3 list-decimal list-inside"><li class="pl-4 -indent-4 text-gray-800">${escapeHtml(content)}</li></ol>` : `<li class="pl-4 -indent-4 text-gray-800">${escapeHtml(content)}</li>`;
           break;
-        case "tip":
-          html = `<div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">${escapeHtml(content)}</p></div>`;
-          break;
-        case "warning":
-          html = `<div class="indent-0 mb-2 bg-red-50 border-l-4 border-red-400 p-4 rounded"><strong class="text-red-800 font-semibold inline">Warning:&nbsp;</strong><p class="text-red-800 inline">${escapeHtml(content)}</p></div>`;
-          break;
-        case "note":
-          html = `<div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">${escapeHtml(content)}</p></div>`;
-          break;
-        case "code":
-          html = `<code class="${buildClass("bg", color, shades.code.bg)} text-sm ${buildClass("text", color, shades.code.text)} font-mono px-1.5 py-0.5 rounded">${escapeHtml(content)}</code>`;
-          break;
-        case "link":
-          html = `<a href="#" class="inline ${buildClass("bg", color, shades.link.bg)} ${buildClass("text", color, shades.link.text)} font-medium text-sm px-1.5 py-0.5 rounded-lg hover:${buildClass("bg", color, shades.link.hoverBg)} transition">${escapeHtml(content)}</a>`;
-          break;
+        case "tip": html = `<div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">${escapeHtml(content)}</p></div>`; break;
+        case "warning": html = `<div class="indent-0 mb-2 bg-red-50 border-l-4 border-red-400 p-4 rounded"><strong class="text-red-800 font-semibold inline">Warning:&nbsp;</strong><p class="text-red-800 inline">${escapeHtml(content)}</p></div>`; break;
+        case "note": html = `<div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">${escapeHtml(content)}</p></div>`; break;
+        case "code": html = `<code class="${buildClass("bg", color, shades.code.bg)} text-sm ${buildClass("text", color, shades.code.text)} font-mono px-1.5 py-0.5 rounded">${escapeHtml(content)}</code>`; break;
+        case "link": html = `<a href="#" class="inline ${buildClass("bg", color, shades.link.bg)} ${buildClass("text", color, shades.link.text)} font-medium text-sm px-1.5 py-0.5 rounded-lg hover:${buildClass("bg", color, shades.link.hoverBg)} transition">${escapeHtml(content)}</a>`; break;
       }
 
-      document.getElementById(type + "Preview").innerHTML = html;
-      document.getElementById(type + "Code").textContent = html;
+      cardPreview.innerHTML = html;
+      cardCode.textContent = html;
     }
 
-    // Update all elements when color changes
-    document.getElementById("colorSelect").addEventListener("change", () => {
-      types.forEach(type => updateElement(type));
+    // Initialize on load
+    window.addEventListener("DOMContentLoaded", () => {
+      const defaultType = elementSelect.value;
+      cardTitle.textContent = defaultType.charAt(0).toUpperCase() + defaultType.slice(1);
+      stepToggle.classList.toggle("hidden", defaultType !== "step");
+      renderCard(defaultType);
     });
 
-    // Update individual elements on input
-    types.forEach(type => {
-      const input = document.getElementById(type + "Input");
-      if (input) {
-        input.addEventListener("input", () => updateElement(type));
-        updateElement(type);
-      }
+    elementSelect.addEventListener("change", () => {
+      const type = elementSelect.value;
+      cardTitle.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+      stepToggle.classList.toggle("hidden", type !== "step");
+      cardInput.value = "";
+      renderCard(type);
     });
 
-    const wrapToggle = document.getElementById("wrapStep");
-    if (wrapToggle) {
-      wrapToggle.addEventListener("change", () => updateElement("step"));
-    }
+    colorSelect.addEventListener("change", () => renderCard(elementSelect.value));
+    cardInput.addEventListener("input", () => renderCard(elementSelect.value));
+    document.getElementById("wrapStep").addEventListener("change", () => renderCard("step"));
 
-    document.querySelectorAll('button.copy-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const targetId = button.getAttribute('data-target');
-        const codeElem = document.getElementById(targetId);
-        if (!codeElem) return;
-        navigator.clipboard.writeText(codeElem.textContent).then(() => {
-          button.textContent = "Copied!";
-          setTimeout(() => button.textContent = "Copy", 1500);
-        });
+    document.getElementById("copyButton").addEventListener("click", () => {
+      navigator.clipboard.writeText(cardCode.textContent).then(() => {
+        const btn = document.getElementById("copyButton");
+        btn.textContent = "Copied!";
+        setTimeout(() => btn.textContent = "Copy", 1500);
       });
     });
   </script>
