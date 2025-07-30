@@ -133,7 +133,12 @@ function generateSidebarLinks() {
     // Create the link
     const link = document.createElement('a');
     link.href = `#${heading.id}`;
-    link.textContent = heading.textContent;
+    const label = Array.from(heading.childNodes)
+      .filter(node => node.nodeType === Node.TEXT_NODE)
+      .map(node => node.textContent.trim())
+      .join(' ');
+
+    link.textContent = label;
     link.className = 'px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-200 transition block';
 
     // Append to nav
@@ -141,46 +146,23 @@ function generateSidebarLinks() {
   });
 }
 
-async function loadStepNavFooter() {
+function createStepNavFooter() {
   const main = document.querySelector('main');
   const footer = document.getElementById('step-nav-footer');
+
   if (!main || !footer) return;
 
-  const prevHref = main.dataset.prev?.trim();
-  const nextHref = main.dataset.next?.trim();
-
-  // If neither link is valid, don't show anything
-  if (!prevHref && !nextHref) return;
-
-  const [prevTitle, nextTitle] = await Promise.all([
-    prevHref ? getPageTitle(prevHref) : null,
-    nextHref ? getPageTitle(nextHref) : null
-  ]);
-
-  // If neither title loaded, don't show the footer
-  if (!prevTitle && !nextTitle) return;
+  const prev = main.dataset.prev;
+  const next = main.dataset.next;
 
   footer.innerHTML = `
     <div>
-      ${prevHref && prevTitle ? `<a href="${prevHref}" class="text-blue-600 hover:underline">&larr; Previous: ${prevTitle}</a>` : ''}
+      ${prev ? `<a href="${prev}" class="text-blue-600 hover:underline">&larr; Previous</a>` : ''}
     </div>
     <div>
-      ${nextHref && nextTitle ? `<a href="${nextHref}" class="text-blue-600 hover:underline">Next: ${nextTitle} &rarr;</a>` : ''}
+      ${next ? `<a href="${next}" class="text-blue-600 hover:underline">Next &rarr;</a>` : ''}
     </div>
   `;
-}
-
-async function getPageTitle(href) {
-  try {
-    const res = await fetch(href);
-    const html = await res.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    const h1 = doc.querySelector('main h1');
-    return h1?.textContent?.trim() || null;
-  } catch (err) {
-    console.warn(`Could not load or parse ${href}:`, err);
-    return null;
-  }
 }
 
 menuBtn.addEventListener('click', () => {
@@ -200,7 +182,8 @@ sidebar.addEventListener('click', (e) => {
 
 overlay.addEventListener('click', closeSidebar);
 
-loadStepNavFooter();
+generateSidebarLinks();
+createStepNavFooter();
 </script>
 
 </body>
