@@ -140,7 +140,7 @@
         case "tip": html = `<div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">${escapeHtml(content)}</p></div>`; break;
         case "warning": html = `<div class="indent-0 mb-2 bg-red-50 border-l-4 border-red-400 p-4 rounded"><strong class="text-red-800 font-semibold inline">Warning:&nbsp;</strong><p class="text-red-800 inline">${escapeHtml(content)}</p></div>`; break;
         case "note": html = `<div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">${escapeHtml(content)}</p></div>`; break;
-        case "code": html = `<code class="${buildClass("bg", color, shades.code.bg)} text-sm ${buildClass("text", color, shades.code.text)} font-mono px-1.5 py-0.5 rounded">${escapeHtml(content)}</code>`; break;
+        case "code": html = `<code class="mb-2 ${buildClass("bg", color, shades.code.bg)} text-sm ${buildClass("text", color, shades.code.text)} font-mono px-1.5 py-0.5 rounded">${escapeHtml(content)}</code>`; break;
         case "link": html = `<a href="#" class="inline ${buildClass("bg", color, shades.link.bg)} ${buildClass("text", color, shades.link.text)} font-medium text-sm px-1.5 py-0.5 rounded-lg hover:${buildClass("bg", color, shades.link.hoverBg)} transition">${escapeHtml(content)}</a>`; break;
       }
 
