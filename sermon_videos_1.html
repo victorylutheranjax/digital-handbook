@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sermon Videos Part 1: Getting the Worship Video</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    /* Main content container width = viewport width minus sidebar width (256px) on md and up */
+    @media (min-width: 768px) {
+      .main-content-container {
+        width: calc(100vw - 16rem); /* 16rem = 256px sidebar width */
+        padding-left: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+<div class="flex h-screen overflow-hidden">
+
+  <!-- Sidebar -->
+  <aside
+    id="sidebar"
+    class="fixed inset-y-0 left-0 z-30 w-64 bg-gray-100 border-r border-gray-300 transform -translate-x-full transition-transform duration-300 ease-in-out
+          md:relative md:translate-x-0"
+  >
+    <div class="h-full flex flex-col p-6">
+      <h2 class="text-xl font-semibold mb-6">Sermon Videos Part 1: Getting the Worship Video</h2>
+
+      <!-- Static Navigation -->
+      <div class="mb-4">
+        <a href="./home.html" class="block px-4 py-2 rounded-lg font-medium text-gray-800 hover:bg-gray-200 transition">
+          Home
+        </a>
+      </div>
+
+      <hr class="border-t border-gray-300 mb-4">
+
+      <!-- Dynamic Navigation -->
+      <nav id="dynamic-links" class="flex flex-col space-y-3">
+        <!-- Links added here by JS -->
+      </nav>
+
+      <footer id="credit" title="Made with ☕ by Jarrett Mielke" class="mt-auto opacity-40 text-sm">&copy; 2025</footer>
+    </div>
+  </aside>
+
+  <!-- Overlay for mobile -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black bg-opacity-25 hidden z-20 md:hidden"
+  ></div>
+
+  <!-- Main content -->
+  <div class="flex-1 flex flex-col overflow-auto main-content-container scroll-smooth">
+
+    <!-- Mobile header with menu button -->
+    <header class="md:hidden sticky top-0 flex items-center bg-gray-100 border-b border-gray-300 p-4">
+      <button
+        id="menu-btn"
+        class="text-slate-600 focus:outline-none focus:ring focus:ring-slate-300 rounded-full p-2 hover:bg-gray-200 transition"
+      >
+        <!-- Hamburger icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <h1 class="ml-4 text-lg font-semibold text-slate-700">Sermon Videos Part 1: Getting the Worship Video</h1>
+    </header>
+
+    <main data-theme-color="indigo" data-prev="" data-next="sermon_videos_2.html" class="max-w-3xl mx-auto w-full p-8">
+      <h1 class="text-3xl font-bold text-indigo-700 mb-6">Sermon Videos Part 1: Getting the Worship Video</h1>
+      <p class="text-gray-700 leading-relaxed mb-4">The end-result of this project will be a standalone sermon video, suitable for watching or listening. In order to achieve this, we first start with the full worship video. The first thought that may come to mind is simply downloading the video from YouTube, since that option is available in YouTube Studio. However, for some unknown reason, YouTube caps the download quality at 720p, which is unsuitable for our needs. Fortunately, there are a few fixes for this.</p>
+      <section>
+        <h2 id="direct" class="flex items-center gap-2 text-2xl font-semibold mt-10 mb-2 text-indigo-800 scroll-mt-20 md:scroll-mt-0">
+          Direct Method
+          <span class="text-xs font-medium bg-green-100 text-green-800 px-2 py-0.5 rounded-full">Recommended</span>
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-4">By far the easiest method of obtaining the file is getting it from the recording device that the ATEM uses.</p>
+        <ol class="space-y-3 list-decimal list-inside">
+          <li class="pl-4 -indent-4 text-gray-800">Copy or move the file from the external recording device onto your computer.
+            <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+              <strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">As of July 2025, the recording device (an external SSD) used with the ATEM is formatted such that it will only work with an Apple computer. If you wish to edit the video on another operating system, first upload the video to a cloud-based drive on the Apple computer, then download it on whatever computer you will use to edit it.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="download" class="text-2xl font-semibold mt-10 mb-2 text-indigo-800 scroll-mt-20 md:scroll-mt-0">Download Method</h2>
+        <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+          <strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">This section assumes you are working in Windows.</p>
+        </div>
+        <p class="text-gray-700 leading-relaxed mb-4">There are many, many tools to download a video from YouTube. While the method below may not be the most user friendly, it is reliable and safe (some websites which claim to download YouTube videos may expose your system to malware).
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong><p class="text-yellow-800 inline">While you can trust the instructions given here, it's important to do your own research and always check downloaded files with antivirus software before opening (or before downloading, if possible).</p>
+          </div>
+        </p>
+        <ol class="space-y-3 list-decimal list-inside">
+          <li class="pl-4 -indent-4 text-gray-800">Download yt-dlp. You can find the latest version 
+            <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" class="inline bg-gray-200 text-gray-700 font-medium text-sm px-1.5 py-0.5 rounded-lg hover:bg-gray-300 transition">here</a>.
+            <div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded">
+              <strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">Yt-dlp and ffmpeg have detailed installation instructions. However, you don't necessarily need to install the programs onto your system. Simply having them downloaded somewhere on your system (in the same folder) will be sufficient for our purposes.</p>
+            </div>
+          </li>
+          <li class="pl-4 -indent-4 text-gray-800">Download ffmpeg. You can find yt-dlp-compatible versions 
+            <a href="https://github.com/yt-dlp/FFmpeg-Builds#ffmpeg-static-auto-builds" target="_blank" class="inline bg-gray-200 text-gray-700 font-medium text-sm px-1.5 py-0.5 rounded-lg hover:bg-gray-300 transition">here</a>.
+          </li>
+          <li class="pl-4 -indent-4 text-gray-800">Once yt-dlp and ffmpeg are downloaded and saved in the same folder, open your command prompt.</li>
+          <li class="pl-4 -indent-4 text-gray-800">Navigate to the folder containing yt-dlp and ffmpeg using the following command:
+            <code class="block mb-2 indent-0 bg-gray-100 text-sm text-gray-800 font-mono px-1.5 py-0.5 rounded">cd FILE_PATH</code>
+            <div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded">
+              <strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">Replace "FILE_PATH" with the path to the folder containing yt-dlp and ffmpeg.</p>
+            </div>
+          </li>
+          <li class="pl-4 -indent-4 text-gray-800">Download the video in the highest available quality using the following command:
+            <code class="block mb-2 indent-0 bg-gray-100 text-sm text-gray-800 font-mono px-1.5 py-0.5 rounded">yt-dlp -f 'bestvideo+bestaudio/best' --merge-output-format mp4 URL</code>
+            <div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded">
+              <strong class="text-green-800 font-semibold inline">Tip:&nbsp;</strong><p class="text-green-800 inline">Replace "URL" with the URL of the YouTube video you are trying to download.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="fallback" class="text-2xl font-semibold mt-10 mb-2 text-indigo-800 scroll-mt-20 md:scroll-mt-0">Fallback Method</h2>
+        <p class="text-gray-700 leading-relaxed mb-4">If neither of these methods are available, or if the user is not comfortable with them, as a last resort, the video can be obtained in lower quality from YouTube Studio.</p>
+        <ol class="space-y-3 list-decimal list-inside">
+          <li class="pl-4 -indent-4 text-gray-800">Go to 
+            <a href="https://studio.youtube.com/" target="_blank" class="inline bg-gray-200 text-gray-700 font-medium text-sm px-1.5 py-0.5 rounded-lg hover:bg-gray-300 transition">YouTube Studio</a> and log in.
+          </li>
+          <li class="pl-4 -indent-4 text-gray-800">In the sidebar, navigate to the "Content" section.</li>
+          <li class="pl-4 -indent-4 text-gray-800">Since you are downloading a video that was originally livestreamed, navigate to the "Live" tab.</li>
+          <li class="pl-4 -indent-4 text-gray-800">Hover over the video you wish to download. Click the <code class="bg-gray-100 text-sm text-gray-800 font-mono px-1.5 py-0.5 rounded">&#8942;</code> button.</li>
+          <li class="pl-4 -indent-4 text-gray-800">Click "Download".</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="faq" class="text-2xl font-semibold mt-10 mb-2 text-indigo-800 scroll-mt-20 md:scroll-mt-0">FAQ</h2>
+        <h3 class="text-xl font-medium mt-6 mb-2 text-indigo-900 scroll-mt-20 md:scroll-mt-0">Command Prompt doesn't recognize 'yt-dlp' as a command. What do I do?</h3>
+        <p class="text-gray-700 leading-relaxed mb-4">This is likely because the name of the executable you downloaded is not exactly 'yt-dlp' or because you are not in the correct folder. When running the command above, ensure the file path shown is the correct path to the folder containing yt-dlp, then replace 'yt-dlp' with whatever the exact name of your executable is (i.e. 'yt-dlp_x86').</p>
+      </section>
+
+      <div class="h-32"></div> <!-- spacer to pad the bottom -->
+    </main>
+  </div>
+
+</div>
+
+<script>
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const menuBtn = document.getElementById('menu-btn');
+
+function openSidebar() {
+  sidebar.classList.remove('-translate-x-full');
+  overlay.classList.remove('hidden');
+  document.body.style.overflow = 'hidden'; // prevent body scroll
+}
+
+function closeSidebar() {
+  sidebar.classList.add('-translate-x-full');
+  overlay.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function generateSidebarLinks() {
+  const sidebarNav = document.querySelector('#dynamic-links');
+  const headings = document.querySelectorAll('main h2');
+
+  headings.forEach((heading, index) => {
+    // Ensure the heading has a unique ID
+    if (!heading.id) {
+      heading.id = heading.textContent
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')         // spaces to dashes
+        .replace(/[^\w\-]+/g, '')     // remove non-word chars
+        .replace(/\-+/g, '-');        // collapse multiple dashes
+
+      // Ensure uniqueness by appending an index if necessary
+      if (document.getElementById(heading.id)) {
+        heading.id += '-' + index;
+      }
+    }
+
+    // Create the link
+    const link = document.createElement('a');
+    link.href = `#${heading.id}`;
+    const label = Array.from(heading.childNodes)
+      .filter(node => node.nodeType === Node.TEXT_NODE)
+      .map(node => node.textContent.trim())
+      .join(' ');
+
+    link.textContent = label;
+    link.className = 'px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-200 transition block';
+
+    // Append to nav
+    sidebarNav.appendChild(link);
+  });
+}
+
+function createStepNavFooter() {
+  const main = document.querySelector('main');
+  const footer = document.getElementById('step-nav-footer');
+
+  if (!main || !footer) return;
+
+  const prev = main.dataset.prev;
+  const next = main.dataset.next;
+
+  footer.innerHTML = `
+    <div>
+      ${prev ? `<a href="${prev}" class="text-blue-600 hover:underline">&larr; Previous</a>` : ''}
+    </div>
+    <div>
+      ${next ? `<a href="${next}" class="text-blue-600 hover:underline">Next &rarr;</a>` : ''}
+    </div>
+  `;
+}
+
+menuBtn.addEventListener('click', () => {
+  if (sidebar.classList.contains('-translate-x-full')) {
+    openSidebar();
+  } else {
+    closeSidebar();
+  }
+});
+
+sidebar.addEventListener('click', (e) => {
+  const link = e.target.closest('a');
+  if (link) {
+    closeSidebar();
+  }
+});
+
+overlay.addEventListener('click', closeSidebar);
+
+generateSidebarLinks();
+createStepNavFooter();
+</script>
+
+</body>
+</html>
