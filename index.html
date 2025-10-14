@@ -73,11 +73,17 @@
           updatedLast.textContent = `Updated: ${lastUpdated}`
           updateVersionWrapper.appendChild(updatedLast);
 
+          console.log(`Last updated: ${lastUpdate}`);
+          
+          
           const versionNum = document.createElement('div');
           versionNum.textContent = `(v${version})`;
           versionNum.className = 'inline ml-1 italic';
           updateVersionWrapper.appendChild(versionNum);
 
+          console.log(`Version: ${version}`);
+
+          
           card.appendChild(updateVersionWrapper);
 
           // Create pills container
@@ -133,5 +139,6 @@
   </script>
 
 </body>
+
 
 </html>
