@@ -72,16 +72,12 @@
           updatedLast.className = 'inline font-bold';
           updatedLast.textContent = `Updated: ${lastUpdated}`
           updateVersionWrapper.appendChild(updatedLast);
-
-          console.log(`Last updated: ${lastUpdated}`);
           
           
           const versionNum = document.createElement('div');
           versionNum.textContent = `(v${version})`;
           versionNum.className = 'inline ml-1 italic';
           updateVersionWrapper.appendChild(versionNum);
-
-          console.log(`Version: ${version}`);
 
           
           card.appendChild(updateVersionWrapper);
@@ -142,4 +138,5 @@
 
 
 </html>
+
 
