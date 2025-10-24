@@ -34,7 +34,7 @@
 
       for (const page of pages) {
         try {
-          const res = await fetch(page);
+          const res = await fetch(`pages/${page}`);
           const html = await res.text();
           const doc = new DOMParser().parseFromString(html, 'text/html');
           const main = doc.querySelector('main');
@@ -52,11 +52,11 @@
 
           // Create big card link
           const card = document.createElement('a');
-          card.href = page;
+          card.href = `article.html?page=${encodeURIComponent(page)}`;
           card.className = `
-          block w-full rounded-xl px-5 py-4 transition hover:shadow-md no-underline
-          bg-${colorName}-50 text-${colorName}-600 mb-6
-        `.replace(/\s+/g, ' ').trim(); // clean spaces
+            block w-full rounded-xl px-5 py-4 transition hover:shadow-md no-underline
+            bg-${colorName}-50 text-${colorName}-600 mb-6
+          `.replace(/\s+/g, ' ').trim(); // clean spaces
 
           // Title inside card
           const title = document.createElement('div');
@@ -101,7 +101,7 @@
               }
 
               const pill = document.createElement('a');
-              pill.href = `${page}#${h2.id}`;
+              pill.href = `article.html?page=${encodeURIComponent(page)}#${h2.id}`;
               pill.className = `
               inline-block
               bg-${colorName}-200
