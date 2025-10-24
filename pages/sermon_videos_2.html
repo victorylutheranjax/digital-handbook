@@ -1,0 +1,159 @@
+<main data-theme-color="orange" data-prev="sermon_videos_1.html" data-next="" data-updated="2025-10-24"
+  data-version="2.0.0" class="max-w-3xl mx-auto w-full p-8">
+  <h1 class="text-3xl font-bold text-orange-700 mb-6">Sermon Videos Part 2: Setting Up the Project</h1>
+  <section>
+    <h2 id="video-editor" class="text-2xl font-semibold mt-10 mb-2 text-orange-800 scroll-mt-20 md:scroll-mt-0">
+      Video Editor</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">This guide assumes you have the DaVinci Resolve video editor
+      from BlackMagicDesign. It can be downloaded for free <a
+        href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank"
+        class="inline bg-gray-200 text-gray-700 font-medium text-sm px-1.5 py-0.5 rounded-lg hover:bg-gray-300 transition">here</a>.
+      However, this software may be too advanced for
+      some users, and, generally speaking, any video editor will do. Many of the concepts from this guide will
+      apply to most video editors.</p>
+    <p class="text-gray-700 leading-relaxed mb-4">This guide will not go over how to install or run DaVinci
+      Resolve. You can find instructions for that on BMD's support page <a
+        href="https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion" target="_blank"
+        class="inline bg-gray-200 text-gray-700 font-medium text-sm px-1.5 py-0.5 rounded-lg hover:bg-gray-300 transition">here</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2 id="file-structure" class="text-2xl font-semibold mt-10 mb-2 text-orange-800 scroll-mt-20 md:scroll-mt-0">
+      File Structure</h2>
+    <p class="text-gray-700 leading-relaxed mb-4">File structure is important in DaVinci Resolve and most other
+      video editors. It's good practice to keep all media relevant to your project in one master folder, with
+      subfolders as desired. This guide will often make reference of the "root media folder", which is the master
+      file that contains all your project media.</p>
+  </section>
+
+  <section>
+    <h2 id="project-setup" class="text-2xl font-semibold mt-10 mb-2 text-orange-800 scroll-mt-20 md:scroll-mt-0">
+      Project Setup</h2>
+    <section>
+      <h3 class="text-xl font-medium mt-6 mb-2 text-orange-900 scroll-mt-20 md:scroll-mt-0">Importing Media</h3>
+      <ol class="space-y-3 list-decimal list-inside">
+        <li class="pl-4 -indent-4 text-gray-800">Open DaVinci Resolve.</li>
+        <li class="pl-4 -indent-4 text-gray-800">On the "Projects" screen, make sure the "Local" tab is selected.
+          Click "New Project" in the lower right.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Give your project a name, then click create.
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+              class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">You can change where your project is saved, but it is generally not
+              recommended unless there is a good reason to do so.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Once the project has been created, ensure you are on the "Cut"
+          tab,
+          found in the bottom middle of the screen. Ensure also that the "Media Pool" is selected in the upper
+          left
+          corner of the screen.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Click the "Import Media Folder" icon in the upper left of the
+          screen.</li>
+        <li class="pl-4 -indent-4 text-gray-800">In the file picker, find and select your root media folder. Click
+          "Select Folder".</li>
+        <li class="pl-4 -indent-4 text-gray-800">Once DaVinci has finished importing the root media folder, the
+          "Media Pool" area should populate with the subfolders in the root media folder.
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+              class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">You can see where you are in the file structure of your project by
+              looking at the breadcrumbs above the "Media Pool". You can also navigate by clicking one of the
+              breadcrumbs.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h3 class="text-xl font-medium mt-6 mb-2 text-orange-900 scroll-mt-20 md:scroll-mt-0">Creating a Boilerplate
+      </h3>
+      <p class="text-gray-700 leading-relaxed mb-4">Our boilerplate project will include intro and end cards, as
+        well as music to bookend the sermon. It is up to the user to supply graphics and audio for these purposes.
+      </p>
+      <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+          class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+        <p class="text-yellow-800 inline">A boilerplate is not required to make one of these videos, but it will
+          make repeated processes like these sermon videos much faster to set up and edit in the future.
+          Additionally, you may choose to use different parts of the boilerplate (e.g., no music). The editing
+          process will be largely the same, though some future steps in this guide may be different if all the
+          boilerplate parts are not present.</p>
+      </div>
+      <ol class="space-y-3 list-decimal list-inside mb-4">
+        <li class="pl-4 -indent-4 text-gray-800">On the "Cut" tab, in the Media Pool, find the intro card in the
+          file system.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Drag the graphic onto the timeline below the file system.
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+              class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">You can drag the clip onto the timeline itself or the timeline
+              overview band in the middle of the editor.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">To change the length of the graphic either click and drag the
+          right (or left) edge of the clip or right click on the clip and click "Change clip duration...".
+          <div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong
+              class="text-green-800 font-semibold inline">Tip:&nbsp;</strong>
+            <p class="text-green-800 inline">Five seconds is generally a good clip duration for intro and end
+              cards.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Repeat steps 1 and 2 for the end card, leaving a little space
+          between the intro and end card clips on the timeline.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Repeat steps 1 and 2 for the intro and outro music. Drop the
+          music below the graphics clips on the timeline.
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+              class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">Due to the nature of the music clips, they will likely be much
+              longer by default than the graphics clips. Be sure to trim them to a duration of a few seconds. It's
+              a good idea to give them about twice the duration of the graphics clips.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Align the start of the intro card with the start of the intro
+          music by dragging the clips on the timeline.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Align both the intro graphic and music to the beginning of the
+          timeline.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Align the end of the outro card with the end of the outro music
+          by dragging the clips on the timeline.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Ensure there is still space between the intro and outro clips.
+          <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded"><strong
+              class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">The exact amount of space isn't important, just that there's enough
+              to drop the sermon clip in between.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Navigate to the "Edit" tab.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Select both the outro graphic and the outro music. Right click on
+          one of them and click "Link clips" in the context menu.</li>
+        <li class="pl-4 -indent-4 text-gray-800">Hover over the intro music clip. Two white tabs should appear,
+          one in each top corner. <div class="indent-0 mb-2 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+            <strong class="text-yellow-800 font-semibold inline">Note:&nbsp;</strong>
+            <p class="text-yellow-800 inline">These tabs designate where audio should end fading in (top left tab)
+              or begin fading out (top right tab). This is intuitively displayed by partially fading out the clip,
+              mimicking the audio's behavior.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Grab the right tab and drag it left, towards the beginning of the
+          clip.<div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong
+              class="text-green-800 font-semibold inline">Tip:&nbsp;</strong>
+            <p class="text-green-800 inline">Since this tab designates where audio starts fading out, choose a
+              spot one or two seconds after the clip starts.</p>
+          </div>
+          <div class="indent-0 mb-2 bg-green-50 border-l-4 border-green-400 p-4 rounded"><strong
+              class="text-green-800 font-semibold inline">Tip:&nbsp;</strong>
+            <p class="text-green-800 inline">Currently, the audio fades out linearly. If you want a more gradual
+              or a sharper fade out, use the knob that appears halfway between the tab you dragged and the end of
+              the clip.</p>
+          </div>
+        </li>
+        <li class="pl-4 -indent-4 text-gray-800">Repeat steps 12 and 13 for the outro music, mirroring the
+          instructions so that the audio fades in, instead of out.</li>
+        <li class="pl-4 -indent-4 text-gray-800">In the "Toolbox" in the lower left corner of the editor, click
+          "Video Transitions".</li>
+        <li class="pl-4 -indent-4 text-gray-800">Drag and drop "Cross Dissolve" or a transition of your choice
+          onto the beginning of the intro graphic clip and the end of the outro clip.</li>
+      </ol>
+      <p class="text-gray-700 leading-relaxed mb-4">The boilerplate is now complete. Future videos will build off
+        of this baseline and are as simple as swapping out the content between the intro and outro clips.</p>
+    </section>
+  </section>
+
+  <div class="h-32"></div> <!-- spacer to pad the bottom -->
+</main>
