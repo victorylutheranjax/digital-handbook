@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15",
+    "vue": "^3.5.25"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "lucide": "^0.556.0",
+    "lucide-vue-next": "^0.556.0",
+    "markdown-it": "^14.1.0",
+    "medium-zoom": "^1.1.0"
+  }
+}

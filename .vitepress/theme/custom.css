@@ -1,0 +1,49 @@
+:root {
+  --vp-c-brand-1: #0265a5;
+  --vp-c-brand-2: #007ac8;
+  --vp-c-brand-3: #048ce0;
+  --vp-c-brand-soft: rgba(0, 160, 234, 0.14);
+
+  --vp-c-secondary-1: #b28234;
+  --vp-c-secondary-2: #cc943a;
+  --vp-c-secondary-3: #cda056;
+  --vp-c-secondary-soft: rgba(255, 196, 100, 0.14);
+
+  --vp-c-text-1: #3c3c43;
+  --vp-c-text-2: #67676c;
+  --vp-c-text-3: #929295;
+  --vp-c-text-4: #bdbdbe;
+}
+
+.dark {
+  --vp-c-brand-1: #8fd2ff;
+  --vp-c-brand-2: #3a93da;
+  --vp-c-brand-3: #1f7fcf;
+
+  --vp-c-text-1: #dfdfd6;
+  --vp-c-text-2: #98989f;
+  --vp-c-text-3: #6a6a71;
+  --vp-c-text-4: #3c3c43;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.shadow-img {
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.medium-zoom-overlay {
+  z-index: 9999 !important;
+}
+
+.medium-zoom-image {
+  z-index: 10000 !important;
+}
+
+.message[data-v-80147a0d],
+.copyright[data-v-80147a0d] {
+  color: var(--vp-c-text-4);
+}
