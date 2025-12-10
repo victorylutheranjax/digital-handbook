@@ -37,6 +37,17 @@ export default defineConfig({
     },
 
     sidebar: {
+      "/google/": [
+        {
+          text: "Google",
+          items: [
+            {
+              text: "Logging In",
+              link: "/google/logging-in",
+            },
+          ],
+        },
+      ],
       "/sermon-videos/": [
         {
           text: "Sermon Videos",
