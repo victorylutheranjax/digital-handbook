@@ -17,7 +17,7 @@ hero:
       link: /changelog
 features:
   - icon:
-      dark: docs/assets/dark-app-window.svg
+      dark: /docs/assets/dark-app-window.svg
       light: docs/assets/light-app-window.svg
       width: 36
       height: 36
@@ -26,8 +26,8 @@ features:
     link: /website/website-access
     linkText: View Website Guides
   - icon:
-      dark: docs/assets/dark-monitor-play.svg
-      light: docs/assets/light-monitor-play.svg
+      dark: /docs/assets/dark-monitor-play.svg
+      light: /docs/assets/light-monitor-play.svg
       width: 36
       height: 36
     title: Sermon Video Guides
@@ -35,8 +35,8 @@ features:
     link: /sermon-videos/getting-the-worship-video
     linkText: View Sermon Video Guides
   - icon:
-      dark: docs/assets/dark-book-open-text.svg
-      light: docs/assets/light-book-open-text.svg
+      dark: /docs/assets/dark-book-open-text.svg
+      light: /docs/assets/light-book-open-text.svg
       width: 36
       height: 36
     title: Worship Guides
