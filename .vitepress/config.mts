@@ -6,6 +6,14 @@ export default defineConfig({
   srcDir: "docs",
 
   title: "Victory Digital Handbook",
+  head: [
+    [
+      'meta',
+      {
+        name: 'robots',
+        content: 'noindex, nofollow',
+      },
+    ],
   description:
     "A collection of guides, tutorials, and knowledge about Victory Lutheran Church.",
   themeConfig: {
