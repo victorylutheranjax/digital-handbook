@@ -5,6 +5,8 @@ import { markdownIconPlugin } from "./plugins/markdown-icon";
 export default defineConfig({
   srcDir: "docs",
 
+  base: '/digital-handbook/',
+
   title: "Victory Digital Handbook",
   head: [
     [
