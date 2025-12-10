@@ -14,6 +14,7 @@ export default defineConfig({
         content: 'noindex, nofollow',
       },
     ],
+  ],
   description:
     "A collection of guides, tutorials, and knowledge about Victory Lutheran Church.",
   themeConfig: {
