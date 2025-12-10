@@ -7,7 +7,7 @@ hero:
   text: "Digital Handbook"
   tagline: Everything you need to know
   image:
-    src: /.vitepress/public/assets/logo-transparent.svg
+    src: /logo-transparent.svg
   actions:
     - theme: brand
       text: Latest Guide
