@@ -7,7 +7,7 @@ hero:
   text: "Digital Handbook"
   tagline: Everything you need to know
   image:
-    src: docs/assets/logo-transparent.svg
+    src: /.vitepress/public/assets/logo-transparent.svg
   actions:
     - theme: brand
       text: Latest Guide
@@ -17,8 +17,8 @@ hero:
       link: /changelog
 features:
   - icon:
-      dark: /assets/dark-app-window.svg
-      light: /assets/light-app-window.svg
+      dark: /.vitepress/public/assets/dark-app-window.svg
+      light: /.vitepress/public/assets/light-app-window.svg
       width: 36
       height: 36
     title: Website Guides
@@ -26,8 +26,8 @@ features:
     link: /website/website-access
     linkText: View Website Guides
   - icon:
-      dark: /assets/dark-monitor-play.svg
-      light: /assets/light-monitor-play.svg
+      dark: /.vitepress/public/assets/dark-monitor-play.svg
+      light: /.vitepress/public/assets/light-monitor-play.svg
       width: 36
       height: 36
     title: Sermon Video Guides
@@ -35,8 +35,8 @@ features:
     link: /sermon-videos/getting-the-worship-video
     linkText: View Sermon Video Guides
   - icon:
-      dark: /assets/dark-book-open-text.svg
-      light: /assets/light-book-open-text.svg
+      dark: /.vitepress/public/assets/dark-book-open-text.svg
+      light: /.vitepress/public/assets/light-book-open-text.svg
       width: 36
       height: 36
     title: Worship Guides
