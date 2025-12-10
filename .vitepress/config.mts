@@ -5,15 +5,15 @@ import { markdownIconPlugin } from "./plugins/markdown-icon";
 export default defineConfig({
   srcDir: "docs",
 
-  base: '/digital-handbook/',
+  base: "/digital-handbook/",
 
   title: "Victory Digital Handbook",
   head: [
     [
-      'meta',
+      "meta",
       {
-        name: 'robots',
-        content: 'noindex, nofollow',
+        name: "robots",
+        content: "noindex, nofollow",
       },
     ],
   ],
@@ -79,7 +79,7 @@ export default defineConfig({
     ],
   },
 
-  lastUpdated: true,
+  lastUpdated: false,
 
   markdown: {
     config: (md) => {
