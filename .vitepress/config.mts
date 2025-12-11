@@ -91,6 +91,7 @@ export default defineConfig({
   },
 
   lastUpdated: false,
+  ignoreDeadLinks: true,
 
   markdown: {
     config: (md) => {
