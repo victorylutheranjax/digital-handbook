@@ -2,10 +2,15 @@
 
 <div class="timeline">
 
+## 2025-12-11 &mdash; <Icon name="wrench" :size="24" /> Slight tweaks and improvements
+
+- Fixed dead links in the [Worship Folders guide](/worship/worship-folders)
+- Fixed some spacing issues in the [Website Access guide](/website/website-access)
+
 ## 2025-12-10 &mdash; <Icon name="file-plus" :size="24" /> New guide: Google Workspace
 
 - Added a new set of guides relating to Victory's Google Workspace
-- First guide page published: [Logging In](/google/logging-in.md)
+- First guide page published: [Logging In](/google/logging-in)
 
 ## 2025-12-10 &mdash; <Icon name="rocket" :size="24" /> v5.0 Launch!
 
