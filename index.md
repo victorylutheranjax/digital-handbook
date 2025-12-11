@@ -50,6 +50,6 @@ features:
       height: 36
     title: Google Workspace Guides
     details: Learn about using Victory's suite of Google workspace tools
-    link: /google/loggin-in
+    link: /google/logging-in
     linkText: View Google Workspace Guides
 ---
