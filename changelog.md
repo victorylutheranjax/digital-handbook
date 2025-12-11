@@ -2,6 +2,11 @@
 
 <div class="timeline">
 
+## 2025-12-10 &mdash; <Icon name="file-plus" :size="24" /> New guide: Google Workspace
+
+- Added a new set of guides relating to Victory's Google Workspace
+- First guide page published: [Logging In](/google/logging-in.md)
+
 ## 2025-12-10 &mdash; <Icon name="rocket" :size="24" /> v5.0 Launch!
 
 Welcome to the new and improved digital handbook!

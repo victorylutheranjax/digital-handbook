@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Latest Guide
-      link: /website/editing-links
+      link: /google/logging-in
     - theme: alt
       text: Changelog
       link: /changelog
