@@ -35,7 +35,7 @@ prev: false
 
 ## Word Processor
 
-1. Access the [Worship Folder Wrapper Template](#).
+1. Access the [Worship Folder Wrapper Template](/worship-folders/worship_folder_wrapper_template.docx).
 
 2. Access the worship folder draft you downloaded from Service Builder.
    ::: info Note
@@ -64,7 +64,7 @@ prev: false
 
 1. Once the document is ready to print, go to "File > Print" in your word processor.
    ::: tip Tip
-   If you are using a Konica Minolta printer that supports the Universal PCL v4 driver, you can use [this preset](#) to automatically set booklet printing options.
+   If you are using a Konica Minolta printer that supports the Universal PCL v4 driver, you can use [this preset](/worship-folders/bulletin_regular.ksf) to automatically set booklet printing options.
    :::
 
 2. When the settings have been properly entered, click "Print".
