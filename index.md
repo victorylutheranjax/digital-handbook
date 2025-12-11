@@ -43,4 +43,13 @@ features:
     details: Learn how to craft beautiful worship folders and slides
     link: /worship/worship-folders
     linkText: View Worship Guides
+  - icon:
+      dark: /dark-google.svg
+      light: /light-google.svg
+      width: 36
+      height: 36
+    title: Google Workspace Guides
+    details: Learn about using Victory's suite of Google workspace tools
+    link: /google/loggin-in
+    linkText: View Google Workspace Guides
 ---
