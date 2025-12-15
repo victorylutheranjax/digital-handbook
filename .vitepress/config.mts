@@ -16,9 +16,17 @@ export default defineConfig({
         content: "noindex, nofollow",
       },
     ],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/logo.svg",
+      },
+    ],
   ],
   description:
     "A collection of guides, tutorials, and knowledge about Victory Lutheran Church.",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -44,6 +52,14 @@ export default defineConfig({
             {
               text: "Logging In",
               link: "/google/logging-in",
+            },
+            {
+              text: "Accessing the Shared Drive",
+              link: "/google/accessing-the-shared-drive",
+            },
+            {
+              text: "Victory Shared Drive Organizational Philosophy",
+              link: "/google/victory-shared-drive-organizational-philosophy",
             },
           ],
         },

@@ -2,6 +2,15 @@
 
 <div class="timeline">
 
+## 2025-12-15 &mdash; <Icon name="wrench" :size=24 /> New guides, plus updates and improvements
+
+- New guide: [Accessing the Shared Drive](/google/accessing-the-shared-drive)
+- New reference: [Victory Shared Drive Organizational Philosophy](/google/victory-shared-drive-organizational-philosophy)
+
+- Added: site favicon
+- Update: added a note about a potential WordPress login challenge in the [Website Access guide](/website/website-access)
+- Update: slight tweaks to the [Logging In guide](/google/logging-in)
+
 ## 2025-12-11 &mdash; <Icon name="wrench" :size="24" /> Slight tweaks and improvements
 
 - Fixed dead links in the [Worship Folders guide](/worship/worship-folders)

@@ -1,6 +1,6 @@
 # Logging In
 
-Use this guide to log in to your ...@victorylutheran.org Google account.
+Use this guide to log in to your '...@victorylutheran.org' Google account.
 
 1. Visit any website on the 'google.com' domain. For this guide, we will use [google.com](https://google.com).
 
@@ -8,7 +8,7 @@ Use this guide to log in to your ...@victorylutheran.org Google account.
 
 ![An arrow pointing to the "Sign In" button on the Google homepage](https://www.victorylutheran.org/hp_wordpress/wp-content/uploads/2025/12/1_sign-in.webp){.shadow-img}
 
-3. Enter your ...@victorylutheran.org email into the "Email" box.
+3. Enter your '...@victorylutheran.org' email into the "Email" box.
    ::: info Note
    Be sure to include the full address, including the handle, '@', and 'victorylutheran.org'.
    :::

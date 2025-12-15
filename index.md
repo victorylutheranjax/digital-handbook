@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Latest Guide
-      link: /google/logging-in
+      link: /google/accessing-the-shared-drive
     - theme: alt
       text: Changelog
       link: /changelog

@@ -25,6 +25,9 @@ Use this guide to access Victory's new website. Click on the images to expand th
 6. Click "Draft Site".
 
    ![An arrow pointing to the "Draft site" button on the ShareFaith account dashboard](https://www.victorylutheran.org/hp_wordpress/wp-content/uploads/2025/12/5_draft-site.webp){.shadow-img}
+   ::: info Note
+   If you are prompted by WordPress to login again, use the same credentials as you used to log into ShareFaith.
+   :::
 
 ## Website Frontend
 
