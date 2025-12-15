@@ -34,5 +34,6 @@ Everything in the resulting view is part of Victory's Shared Drive and is access
 
 ::: details I don't see the "Shared drives" option in the Google Drive sidebar. Where is it?
 If the "Shared drives" option does not appear, check to make sure you are logged in with the correct account. If you are not logged in with your '...@victorylutheran.org' email, the option may not appear.
+
 Another possible reason is it may not have loaded yet. As noted above. If you are logged in with your '...@victorylutheran.org' email, the "Shared drives" option may not appear immediately, but should populate within a few seconds.
 :::
