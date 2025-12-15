@@ -20,10 +20,11 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/logo.svg",
+        href: "/digital-handbook/logo.svg",
       },
     ],
   ],
+
   description:
     "A collection of guides, tutorials, and knowledge about Victory Lutheran Church.",
 
