@@ -29,3 +29,10 @@ _or_
    ![An arrow pointing to the "Victory Shared Drive" in Google Drive.](https://www.victorylutheran.org/hp_wordpress/wp-content/uploads/2025/12/2_shared-drives.webp){.shadow-img}
 
 Everything in the resulting view is part of Victory's Shared Drive and is accessible to anyone with a '...@victorylutheran.org' email. Please refer to the [Victory Shared Drive Organizational Philosophy](/google/victory-shared-drive-organizational-philosophy) to understand how to keep files organized and accessible within the drive.
+
+## FAQ
+
+::: details I don't see the "Shared drives" option in the Google Drive sidebar. Where is it?
+If the "Shared drives" option does not appear, check to make sure you are logged in with the correct account. If you are not logged in with your '...@victorylutheran.org' email, the option may not appear.
+Another possible reason is it may not have loaded yet. As noted above. If you are logged in with your '...@victorylutheran.org' email, the "Shared drives" option may not appear immediately, but should populate within a few seconds.
+:::
