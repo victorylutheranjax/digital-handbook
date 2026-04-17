@@ -6,6 +6,7 @@
 
 - Rework: [Setting Up the Project](/sermon-videos/setting-up-the-project.md)
 - Update: typo fixes
+- Removal: Broken image links
 
 ## 2025-12-15 &mdash; <Icon name="wrench" :size=24 /> New guides, plus updates and improvements
 

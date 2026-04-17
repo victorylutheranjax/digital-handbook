@@ -4,6 +4,8 @@ outline: [2, 3]
 
 # Worship Folders Style Guide
 
+Please note, this is a work in progress.
+
 ## Purpose
 
 ## Document Structure

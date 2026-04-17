@@ -72,7 +72,6 @@ prev: false
    Be sure to print test copies first. Once the printer has produced a copy you are satisfied with, use the same settings to print the rest.
    :::
 
-3. Export the document as a PDF for file distribution (i.e. to those serving in worship, posted on the church website, etc.) by clicking "File > Export" in your word processor.
    ::: warning Warning
    Not all word processors are created equal when it comes to exporting to PDF. Check that the exported file appears as expected. If it does not, try exporting from a different word processor or using an online tool to convert the document directly into a PDF.
    :::

@@ -22,11 +22,7 @@ _or_
    Be sure to click "Shared drives" and not "Shared with me". These options are two distinct sections of Google Drive and represent two completely different kinds of files.
    :::
 
-   ![An arrow pointing to the "Shared drives" option in the Google Drive homepage sidebar](https://www.victorylutheran.org/hp_wordpress/wp-content/uploads/2025/12/1_drive-home.webp){.shadow-img}
-
 3. In the view that appears, double-click "Victory Shared Drive".
-
-   ![An arrow pointing to the "Victory Shared Drive" in Google Drive.](https://www.victorylutheran.org/hp_wordpress/wp-content/uploads/2025/12/2_shared-drives.webp){.shadow-img}
 
 Everything in the resulting view is part of Victory's Shared Drive and is accessible to anyone with a '...@victorylutheran.org' email. Please refer to the [Victory Shared Drive Organizational Philosophy](/google/victory-shared-drive-organizational-philosophy) to understand how to keep files organized and accessible within the drive.
 
