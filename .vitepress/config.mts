@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { markdownIconPlugin } from "./plugins/markdown-icon";
+import MarkdownItFootnote from "markdown-it-footnote";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -94,6 +95,10 @@ export default defineConfig({
           text: "Worship",
           items: [
             { text: "Worship Folders", link: "/worship/worship-folders" },
+            {
+              text: "Worship Folders Style Guide",
+              link: "/worship/worship-folders-style-guide",
+            },
           ],
         },
       ],
@@ -113,6 +118,7 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       md.use(markdownIconPlugin);
+      md.use(MarkdownItFootnote);
     },
   },
 });

@@ -5,7 +5,7 @@ Victory's Shared Google Drive is a fantastic tool for organizing, archiving, and
 ::: info Organizational Philosophy Rules
 
 1. Top-level folders should correspond to single distinct areas of Victory's ministry.
-2. Second-level folders should correspond to single distinct subcategories with an area of Victory's ministry.
+2. Second-level folders should correspond to single distinct subcategories within an area of Victory's ministry.
 3. Access to files and folders should be granted at the lowest hierarchical level, with the fewest permissions, and for the shortest amount of time necessary.
 4. Folders and files should be marked as archived, rather than deleted.
    :::
@@ -25,7 +25,7 @@ Top-level folders should correspond to single distinct areas of Victory's minist
 Second level folders are those directly inside top-level folders. These folders should correspond to subcategories within the parent top-level folder. For example, second-level folders in the "Worship" top-level folder include "Worship Folders", "Worship Media", "Worship Slides", etc.
 
 ::: info Rule #2
-Second-level folders should correspond to single distinct subcategories with an area of Victory's ministry.
+Second-level folders should correspond to single distinct subcategories within an area of Victory's ministry.
 :::
 
 ## Third-Level and Lower Folders

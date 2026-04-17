@@ -2,6 +2,11 @@
 
 <div class="timeline">
 
+## 2026-04-17 &mdash; <Icon name="refresh-ccw" :size=24 /> Minor rework and updates
+
+- Rework: [Setting Up the Project](/sermon-videos/setting-up-the-project.md)
+- Update: typo fixes
+
 ## 2025-12-15 &mdash; <Icon name="wrench" :size=24 /> New guides, plus updates and improvements
 
 - New guide: [Accessing the Shared Drive](/google/accessing-the-shared-drive)
