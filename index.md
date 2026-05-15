@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Latest Guide
-      link: /google/accessing-the-shared-drive
+      link: /worship/worship-slides
     - theme: alt
       text: Changelog
       link: /changelog

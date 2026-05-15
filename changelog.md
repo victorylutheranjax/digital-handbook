@@ -2,6 +2,10 @@
 
 <div class="timeline">
 
+## 2026-05-15 &mdash; <Icon name="file-plus" :size="24" /> New guide: Worship Slides
+
+- Added: [Worship Slides](/worship/worship-slides.md)
+
 ## 2026-04-17 &mdash; <Icon name="refresh-ccw" :size=24 /> Minor rework and updates
 
 - Rework: [Setting Up the Project](/sermon-videos/setting-up-the-project.md)

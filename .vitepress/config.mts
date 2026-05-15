@@ -99,6 +99,7 @@ export default defineConfig({
               text: "Worship Folders Style Guide",
               link: "/worship/worship-folders-style-guide",
             },
+            { text: "Worship Slides", link: "/worship/worship-slides" },
           ],
         },
       ],
